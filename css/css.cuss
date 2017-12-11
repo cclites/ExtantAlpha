@@ -1,0 +1,236 @@
+<?php
+
+  /*
+   * CUSS - home rolled css pre-processor
+   * 
+   * EXTANT::ALPHA v.0.1
+   * Copyright: Extant Digial LLC
+   */
+
+  //Main text color
+  $color1Color = "#fff";  					//SET THIS
+  
+  //Contact form text color
+  $color2Color = "#5cb85c"; 				//SET THIS
+  
+  //Circles background color
+  $backgroundColor1Color = "#6f8691;";      //SET THIS
+  
+  //header and footer background
+  $backgroundColor2Color = "#494949";		//SET THIS
+  
+  //explainer section background
+  $backgroundColor3Color = "#999";          //SET THIS
+  
+  //Cta form button background
+  $button1Color = "#337ab7";				//SET THIS
+  
+  //Submit form button background
+  $button2Color = "#f0ad4e";				//SET THIS
+  
+  //explainer wrapper
+  $border1Color = "#00b9ff";				//SET THIS
+  
+  //article
+  //$border2Color = "#494949";				//SET THIS
+  $border2Color = "pink";
+  
+  //column left heading, column right heading
+  $border3Color = "#5bc0de";				//SET THIS
+  
+  //samples container
+  $border4Color = "#333";					//SET THIS
+  
+  //cta button border
+  $border5Color = "#eea236";				//SET THIS
+  
+  //submit button border
+  $border6Color = "#2e6da4";				//SET THIS
+  
+  /****************************************************************************/
+
+  $border1 = array(
+  	".explainer .wrapper",	
+  );
+
+  $border2 = array(
+    ".col-left",			
+  	"article", 				
+  );
+
+  $border3 = array(
+    ".col_left_heading",	
+  	".col_right_heading",	
+  );
+
+  $border4 = array(
+    ".samplesContainer",
+  );
+  
+  $border5 = array(
+    ".btn.cta.btn-warning", 
+  );
+
+  $border6 = array(
+    ".submitMessage.btn.btn-primary", 
+  );
+
+  $backgroundColor1 = array(
+  	".explainer .wrapper",  //circle backgrounds
+  );
+  
+  $backgroundColor2 = array(
+  	"footer",				
+  	".fixed_header", 		
+  	".contactFormContainer",
+  );
+  
+  $backgroundColor3 = array(
+    ".belowFoldContent",
+  );
+
+  $button1 = array(
+  	".submitMessage.btn.btn-primary",
+  );
+  
+  $button2 = array(
+  	".btn.cta.btn-warning",	
+  );
+     
+  $color1 = array(
+    ".samplesContainer h2", 
+    ".billboardContent h1",	
+    ".form input",			
+    ".contactMessage",		
+    ".form",				
+    ".contactForm label",	
+    ".logo_container", 		
+    ".text_logo",			
+    ".header_info",			
+    "footer",				
+    ".main_content .floating_container",	
+  );
+  
+
+  $color2 = array(
+  	".desc_label",			
+  	".col_left_heading",	
+  	".col_right_heading",
+  	".contactForm input",
+  	".contactForm textarea"
+  );
+  
+  /*********************************************************************/
+  //Now process each of the styles - start with color
+  /*********************************************************************/
+  
+  $html = "\n<style>\n";
+  
+  for($i=0; $i < count($color1); $i += 1){
+	$html .= $color1[$i];
+	if($i !== count($color1)-1){ $html .= ",\n"; }
+  }
+
+  $html .= "{ color:" . $color1Color . "; }\n\n";
+  
+  /**********/
+  
+  for($i=0; $i < count($color2); $i += 1){
+	$html .= $color2[$i];
+	if($i !== count($color2)-1){ $html .= ",\n"; }
+  }
+  
+  $html .= "{ color:" . $color2Color . "; }\n\n";
+  
+  /**********/
+  
+  for($i=0; $i < count($backgroundColor1); $i += 1){
+	$html .= $backgroundColor1[$i];
+	if($i !== count($backgroundColor1)-1){ $html .= ",\n"; }
+  }
+  
+  $html .= "{ background-color:" . $backgroundColor1Color . "; }\n\n";
+  
+  /**********/
+  
+  for($i=0; $i < count($backgroundColor2); $i += 1){
+	$html .= $backgroundColor2[$i];
+	if($i !== count($backgroundColor2)-1){ $html .= ",\n"; }
+  }
+  
+  $html .= "{ background-color:" . $backgroundColor2Color . "; }\n\n";
+  
+  /**********/
+  
+  for($i=0; $i < count($backgroundColor3); $i += 1){
+	$html .= $backgroundColor3[$i];
+	if($i !== count($backgroundColor3)-1){ $html .= ",\n"; }
+  }
+  
+  $html .= "{ background-color:" . $backgroundColor3Color . "; }\n\n";
+  
+  /** button background colors **/
+  
+  for($i=0; $i < count($button1); $i += 1){
+	$html .= $button1[$i];
+	if($i !== count($button1)-1){ $html .= ",\n"; }
+  }
+  
+  $html .= "{ background-color:" . $button1Color . "; }\n\n";
+  
+  for($i=0; $i < count($button2); $i += 1){
+	$html .= $button2[$i];
+	if($i !== count($button2)-1){ $html .= ",\n"; }
+  }
+  
+  $html .= "{ background-color:" . $button2Color . "; }\n\n";
+  
+  /** BORDERS **/
+  
+  for($i=0; $i < count($border1); $i += 1){
+	$html .= $border1[$i];
+	if($i !== count($border1)-1){ $html .= ",\n"; }
+  }
+
+  $html .= "{ border-color:" . $border1Color . "; }\n\n";
+  
+  for($i=0; $i < count($border2); $i += 1){
+	$html .= $border2[$i];
+	if($i !== count($border2)-1){ $html .= ",\n"; }
+  }
+
+  $html .= "{ border-color:" . $border2Color . "; }\n\n";
+  
+  for($i=0; $i < count($border3); $i += 1){
+	$html .= $border3[$i];
+	if($i !== count($border3)-1){ $html .= ",\n"; }
+  }
+
+  $html .= "{ border-color:" . $border3Color . "; }\n\n";
+  
+  for($i=0; $i < count($border4); $i += 1){
+	$html .= $border4[$i];
+	if($i !== count($border4)-1){ $html .= ",\n"; }
+  }
+
+  $html .= "{ border-color:" . $border4Color . "; }\n\n";
+  
+  for($i=0; $i < count($border5); $i += 1){
+	$html .= $border5[$i];
+	if($i !== count($border5)-1){ $html .= ",\n"; }
+  }
+
+  $html .= "{ border-color:" . $border5Color . "; }\n\n";
+  
+  for($i=0; $i < count($border6); $i += 1){
+	$html .= $border6[$i];
+	if($i !== count($border6)-1){ $html .= ",\n"; }
+  }
+
+  $html .= "{ border-color:" . $border6Color . "; }\n\n";
+  
+
+  $html .= "</style>";
+  echo $html;
+
+?>

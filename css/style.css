@@ -1,0 +1,231 @@
+/*
+ * TAG DEFAULTS
+ */
+body{
+	box-sizing: border-box;
+}
+
+.fixed_header{
+    box-shadow: 1px 11px 3px 3px rgba(0, 0, 0, 0.5); 
+}
+
+
+.col-left{
+	border-right: 1px solid; 
+}
+
+article{
+	border-bottom: 1px solid;
+}
+
+.col_left_heading,
+.col_right_heading{
+	font-size: 34px;
+	border-bottom: 1px solid;
+}
+
+
+/*
+ * SIZES
+ */
+body{
+	font-size: 21px;
+}
+
+.text_logo{
+	font-size: 30px;
+	margin-left: 12px;
+}
+
+.floating_container{
+
+	margin: 0 auto;
+	position: relative;
+}
+
+
+/*
+ * fixed_header 
+ */
+
+.header_info.col-md-3 {
+    text-align: right;
+}
+
+.fixed_header{
+	height: 100px;
+	width: 100vw;
+	position: fixed;
+	top: 20px;
+	left: 0;
+	z-index: 10;
+}
+
+.header_info {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.fixed_header .floating_container{
+	height: 100px;
+}
+
+.logo_container{
+	margin-top: 10px;
+    padding-left: 0;
+}
+
+
+.btn.cta{
+	float: right;
+    font-size: 22px;
+    height: 100px;
+    padding: 2px 16px;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    border-radius: 0;
+}
+
+.local_time {
+    left: 16px;
+    position: relative;
+    top: 20px;
+}
+
+/*
+ * MAIN CONTENT
+ */
+
+.main_content .floating_container{ 
+    margin-top: 81px;
+    margin-bottom: 40px;
+}
+
+label {
+    font-weight: 400;
+}
+
+/*
+ * COL-LEFT
+ */
+.col-left { 
+    height: 100%;
+}
+
+.make_payment{
+	font-size: 38px;
+    height: 200px;
+    margin-left: 3%;
+    width: 95%;
+}
+
+.day{
+	display: inline-block;
+	width: 60px;
+	font-weight: bold;
+}
+
+/*
+ * COL-RIGHT
+ */
+
+.col-right{
+	height: 100%;
+}
+
+.col-right h1{
+    text-align: center;
+}
+
+.samplesContainer .row {
+	width: auto;
+	max-width: 1052px;
+	margin: 0 auto;
+}
+
+.info_summary .col-md-6:last-of-type {
+    /*padding-left: 34px;*/
+}
+
+.info_summary img{
+	float: left;
+	margin: 8px;
+}
+
+.info_summary ul{
+	padding: 0;
+}
+
+.info_summary ul li{
+	margin-left: 25px;
+}
+
+article{
+	min-height: 516px;
+}
+
+.desc_label{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.contact .col-md-6 > p {
+    margin-top: 40px;
+}
+
+.info_summary .col-md-6:last-of-type ul{
+    bottom: 15px;
+    position: relative;
+}
+
+/*
+ * CONTACT FORM
+ */
+
+.submitMessage.btn.btn-primary {
+    font-size: 22px;
+    height: 62px;
+    padding: 6px 30px;
+    margin-top: 20px;
+}
+
+.fa-microphone{
+	display: inline-block;
+	float: left;
+	margin: 8px;
+}
+
+label:not(first-of-type) {
+    margin-top: 6px;
+}
+
+.site-content.container {
+    padding-bottom: 40px;
+}
+
+.col-md-6 > iframe{
+	position: relative;
+	top: 54px;
+	left: 33px;
+}
+
+.row .col-md-9{
+	padding-left: 36px;
+}
+
+/***** BILLBOARD *****/
+.billboard{
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	/*background-image: url("../images/billboard1.jpg");*/
+	height: 500px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    /*display: none;*/
+}

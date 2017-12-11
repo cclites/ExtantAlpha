@@ -1,0 +1,245 @@
+body{
+	padding-top: 150px;
+	height: 1000px;
+	box-sizing: border-box;
+	
+	font-family: Raleway;  /** move to css.cuss  **/
+}
+
+footer{
+	position: fixed;
+    bottom: 0;
+    display: block;
+    width: 100vw;
+    padding-top: 12px;
+    text-align: center;
+    height: 100px;
+    font-size: 13px;
+}
+
+.footer-link{
+	margin-right: 12px;
+}
+
+.trashtalk{
+	font-size: 10px;
+}
+
+.samplesContainer,
+.contactForm{
+	width: 1100px;
+	margin: 0 auto;
+	height: auto;
+}
+
+.contactForm{
+	display: flex;
+}
+
+.contactMessage.col-md-5 {
+	height: 258px;
+}
+
+.samplesContainer{
+	z-index: 0;
+	position: relative;
+	width: 100%;
+}
+
+.contactForm label{
+	display: inline-block;
+	width: 150px;
+}
+
+.contactFormContainer {
+	height: 360px;
+	opacity: 1;
+	padding-top: 21px;
+	position: relative;
+	margin-bottom: 98px;
+}
+
+.form,
+.contactMessage{
+    height: 165px;
+    padding-bottom: 20px;
+}
+
+.fa.fa-phone {
+	position: relative;
+	top: 3px;
+}
+
+.submitMessage.btn.btn-primary {
+    float: right;
+    margin-right: 46px;
+}
+
+.form input {
+    width: 416px;
+}
+
+.explainer{
+	height: auto;
+	margin: 0 auto;
+	padding-bottom: 16px;
+	overflow: hidden;
+}
+
+.explainer > div img{
+	left: 22%;
+    position: relative;
+    text-align: center;
+    width: 300px;
+}
+
+.videoSample.col-md-4,
+.imageSample.col-md-4 {
+	height: 200px;
+	width: 350px;
+}
+
+.imageSample.col-md-4 img{
+	width: 100%;
+	height: 100%;
+}
+
+.belowFoldContent{
+    margin-top: 30px;
+    position: relative;
+}
+
+.samplesContainer{
+	border: 1px solid;
+	padding-bottom: 48px;
+}
+
+.billboardContent img{
+	display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 300px;
+}
+
+.samplesContainer h2,
+.billboardContent h1{
+    font-weight: 900;
+    position: relative;
+    text-align: center;
+    text-shadow: -2px 4px 2px rgba(0, 0, 0, 1);
+}
+
+.quad_container{
+	margin-top: 75px;
+	position: relative;
+}
+
+.billboardContent {
+    margin-top: 56px;
+    height: 354px;
+}
+
+.explainer .wrapper{
+	margin: 0 auto;
+	border: 4px solid;
+    border-radius: 50%;
+    height: 150px;
+    margin-top: 19px;
+    padding-top: 38px;
+    text-align: center;
+    width: 150px;
+}
+
+.explainer .col-md-4 p{
+	font-size: 21px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.samplesContainer {
+    border: medium none;
+}
+
+.contactEmail {
+    margin-bottom: 5px;
+}
+
+.site-info{
+	font-size: 16px;
+}
+
+.cta-wrapper{
+	
+}
+
+@media screen and (max-width: 1200px){
+	
+	.btn.cta.btn-warning {
+		width: 100%;
+		height: 35px;
+		top: 90px;
+		right: 0;
+	}
+	
+	.contactForm{
+		width: 100%;
+		padding: 0;
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 1100px){ 
+	
+	.form{
+		height: 380px;
+		padding-bottom: 20px;
+		width: 420px;
+		margin: 0 auto 73px;
+	}
+	
+	.form input,
+	.form textarea {
+		width: 380px;
+	}
+
+	
+	.submitMessage.btn.btn-primary {
+		float: none;
+		margin-right: 0;
+	}
+	
+	
+}
+
+@media screen and (max-width: 1000px){
+	
+	.imageSample.col-md-4,
+	.videoSample.col-md-4 {
+		margin: 12px auto;
+	}
+	
+	iframe {
+		margin: 0 auto;
+		display: block;
+		width: 320px;
+	}
+	
+	.contactFormContainer{
+		height: 740px;
+	}
+	
+	.contactMessage.col-md-5 {
+		height: 258px;
+		width: 420px;
+		margin: 0 auto;
+	}
+	
+	.form.col-md-7{
+		width: 420px;
+		margin: 0 auto;
+	}
+	
+}
+
+
