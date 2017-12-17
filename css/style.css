@@ -143,11 +143,10 @@ label {
 	width: auto;
 	max-width: 1052px;
 	margin: 0 auto;
+	height: 250px;
+	overflow: hidden;
 }
 
-.info_summary .col-md-6:last-of-type {
-    /*padding-left: 34px;*/
-}
 
 .info_summary img{
 	float: left;
@@ -221,11 +220,36 @@ label:not(first-of-type) {
 	position: fixed;
 	top: 0;
 	left: 0;
-	/*background-image: url("../images/billboard1.jpg");*/
 	height: 500px;
 	display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0.8;
-    /*display: none;*/
+}
+
+/***** SLIDER  *****/
+
+.sliderContainer{
+	height: 40vh;
+	width: 75vw;
+	margin: 30px auto;
+	position: relative;
+}
+
+.slide {
+	height: 40vw;
+	width: 50vw;
+	margin: 0 auto;
+	display: none;
+}
+
+.slide_0{
+	display: block;
+}
+
+.slide img {
+	width: auto;
+	height: 39.7vh;
+	margin: 0 auto;
+	display: block;
 }

@@ -32,6 +32,12 @@ footer{
 	height: auto;
 }
 
+.slide {
+	/*-webkit-transform: rotateY(90deg);
+	transform: rotateY(90deg);*/
+	transition: all 0.7s ease-in-out 0.3s;
+}
+
 .contactForm{
 	display: flex;
 }
@@ -43,7 +49,16 @@ footer{
 .samplesContainer{
 	z-index: 0;
 	position: relative;
+}
+
+.sample-block {
+	height: 226px;
+    width: 300px;
+}
+
+.sample{
 	width: 100%;
+	height: 100%;
 }
 
 .contactForm label{
@@ -109,11 +124,6 @@ footer{
     position: relative;
 }
 
-.samplesContainer{
-	border: 1px solid;
-	padding-bottom: 48px;
-}
-
 .billboardContent img{
 	display: block;
     margin: 0 auto;
@@ -127,6 +137,10 @@ footer{
     position: relative;
     text-align: center;
     text-shadow: -2px 4px 2px rgba(0, 0, 0, 1);
+}
+
+.samplesContainer h2{
+	margin-bottom: 20px;
 }
 
 .quad_container{
@@ -156,10 +170,6 @@ footer{
     text-align: center;
 }
 
-.samplesContainer {
-    border: medium none;
-}
-
 .contactEmail {
     margin-bottom: 5px;
 }
@@ -168,9 +178,6 @@ footer{
 	font-size: 16px;
 }
 
-.cta-wrapper{
-	
-}
 
 @media screen and (max-width: 1200px){
 	
@@ -185,6 +192,14 @@ footer{
 		width: 100%;
 		padding: 0;
 		display: block;
+	}
+	
+	.samplesContainer{
+		width: 100%;
+	}
+	
+	div.samplesContainer .row{
+		height: auto;
 	}
 
 }

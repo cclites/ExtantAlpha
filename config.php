@@ -71,21 +71,14 @@
 	  
 	  'overHeroImage'		=> 'images/heroOver.png',
 	  
-	  
-	  'samplesHeader'		=> 'Extant::Alpha Placholder Samples Header',
-	  
-	  
-	  'sampleImages'		=> [
-	   								"images/sampleImage1.jpg",
-	   								"images/sampleImage2.jpg",
-	   								"images/sampleImage3.jpg",
+	  'samples'				=> [
+	                                ["images", "images/sampleImage1.jpg"],
+	                                ["images", "images/sampleImage2.jpg"],
+	                                ["videos", "https://www.youtube.com/embed/3tuvzTA_xtg"]
 	  						   ],
-	  						   
-	  'sampleVideos'		=> [
-	   								"videos/sampleImage1.jpg",
-	   								"videos/sampleImage2.jpg",
-	   								"videos/sampleImage3.jpg",
-	  						   ],
+	  
+	  
+	  'samplesHeader'		=> 'Extant::Alpha Placholder Samples Header',						   
 	  						   
 	  'showBillboard'		=> true,
 	  
@@ -96,6 +89,16 @@
 	  'showExplainer'		=> true,
 	  
 	  'showSamples'			=> true,
+	  
+	  'showSlider'			=> true,
+	  
+	  'sliderContent'		=> [
+	   								"images/sampleImage1.jpg",
+	   								"images/sampleImage2.jpg",
+	   								"images/sampleImage3.jpg",
+	  						   ],
+	  						   
+	  'slideSpeed'			=> 6000,
 	      					   			   
       'tagLine'				=> 'Extant::Alpha Placeholder Tag Line',
       

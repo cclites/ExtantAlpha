@@ -34,9 +34,13 @@
 			include_once 'templates/billboard-container.php';
 			include_once 'templates/fixed-header-container.php';
 			
-			//landing page
+			//landing page content
 			if($_SESSION["config"]["showExplainer"]){
 				include_once 'templates/explainer-container.php';
+			}
+			
+			if($_SESSION["config"]["showSlider"]){
+				include_once 'templates/slider-container.php';
 			}
 			
 			if($_SESSION["config"]["showSamples"]){

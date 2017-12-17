@@ -17,36 +17,47 @@
 			
 	<h2><?=  $_SESSION["config"]["samplesHeader"] ?></h2>
 	
-	
-	<div class="row">
-		<div class="imageSample col-md-4">
-			<img class="sample" src="<?=  $_SESSION["config"]["sampleImages"][0] ?>">
-		</div>
-		
-		<div class="imageSample col-md-4">
-			<img class="sample" src="<?=  $_SESSION["config"]["sampleImages"][1] ?>">
-		</div> 
-		
-		<div class="videoSample col-md-4">
-			<iframe width="320"  height="200" src="https://www.youtube.com/embed/3tuvzTA_xtg" frameborder="0" allowfullscreen></iframe>
-		</div>
-	</div>
-	
-	<!-- CAN INCLUDE VIDEOS ALSO -->
-	<!--	 
-	<div class="row">
-		<div class="videoSample col-md-4">
-			<iframe width="350"  height="200" src="<?=  $_SESSION["config"]["sampleVideos"][0] ?>" frameborder="0" allowfullscreen></iframe>
-		</div>
-		
-		<div class="videoSample col-md-4">
-			<iframe width="350"  height="200" src="<?=  $_SESSION["config"]["sampleVideos"][1] ?>" frameborder="0" allowfullscreen></iframe>
-		</div> 
-		
-		<div class="videoSample col-md-4">
-			<iframe width="350"  height="200" src="<?=  $_SESSION["config"]["sampleVideos"][1] ?>" frameborder="0" allowfullscreen></iframe>
-		</div>
-	</div>
-	-->
+	<!-- samples are appended here -->
 	
 </div>
+
+<script>
+	
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		Samples.loadSamples();
+	});
+	
+	var Samples = {
+		
+		loadSamples: function(){
+			
+			var html = "",
+			    samples = <?= json_encode($c["samples"]) ?>;
+			    
+			    
+			html += '<div class="row samples-row">';
+			
+			for(var i=0; i<3; i += 1){
+
+				if(samples[i][0] === "images"){
+					
+					html += '<div class="imageSample sample-block col-md-4">' +
+					        '  <img class="sample" src="'+ samples[i][1] +'">';
+				}else{
+					html += '<div class="videoSample sample-block col-md-4">' +
+			                '<iframe class="sample" width="320" height="200" src="'+ samples[i][1] +'" frameborder="0" allowfullscreen></iframe>';
+				}
+
+				html +=  '  </div>';//close sample-block row
+
+			}
+			
+			html += '</div>';	//close samples row
+			
+			$(".samplesContainer").append(html);
+			
+		},
+		
+	};
+	
+</script>
