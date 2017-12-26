@@ -1,21 +1,11 @@
 <?php
 
-	$func = "";
- 	$call = $_SERVER['HTTP_REFERER'];
- 
-	if (strpos($call, 'api/') !== false) {
-	    dispatch($_GET);
-	}else{
-		return json_encode(array('status'=>0, 'message'=>'Page does not exist.'));
+    $page = "home";
+
+	if(  isset($_GET["page"]) ){
+		$page = $_GET["page"];
+	}else if( isset($_POST["page"]) ){
+	    $page = $_POST["page"];
 	}
-
-function dispatch($request){
-	
-	$request = $request["request"];
-	
-	
-}
-
-
 
 ?>

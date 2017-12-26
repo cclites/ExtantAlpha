@@ -72,8 +72,22 @@ body{
 }
 
 .logo_container{
-	margin-top: 10px;
     padding-left: 0;
+}
+
+
+nav.header-nav{
+	margin-left: 12px;
+}
+
+nav.header-nav a{
+ 	margin-right: 12px;
+}
+
+nav.footer-menu-links a:hover,
+nav.header-nav a:hover{
+	color: #fff;
+	text-decoration: none;
 }
 
 
@@ -105,6 +119,20 @@ body{
 
 label {
     font-weight: 400;
+}
+
+.subpage-heading{
+	text-align: center;
+}
+
+.subpage-content{
+	background-size: cover;
+	height: 100%;
+}
+
+main.subpage-content{
+	height: 100%;
+	padding-top: 175px;
 }
 
 /*
@@ -231,8 +259,12 @@ label:not(first-of-type) {
 
 .sliderContainer{
 	height: 40vh;
-	width: 75vw;
+	width: 50vw;
 	margin: 30px auto;
+	position: relative;
+}
+
+.slider-main{
 	position: relative;
 }
 
@@ -241,6 +273,7 @@ label:not(first-of-type) {
 	width: 50vw;
 	margin: 0 auto;
 	display: none;
+	position: absolute;
 }
 
 .slide_0{

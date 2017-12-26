@@ -43,8 +43,7 @@
 		
 		showNext: function(){
 
-			$(".slide_" + Slider.index).hide();
-			
+			$(".slide_" + Slider.index).fadeTo(1000, 0);
 			
 			Slider.index += 1;
 			
@@ -52,7 +51,10 @@
 				Slider.index = 0;
 			}
 			
-			$(".slide_" + Slider.index).show();
+			setTimeout(function(){
+				$(".slide_" + Slider.index).fadeTo(1500, 100);
+			}, 1200);
+
 		},
 		
 		slides: <?= json_encode($c["sliderContent"]) ?>,

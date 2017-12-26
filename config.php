@@ -41,13 +41,20 @@
 	  						   
 	  
 	  'footerLinks'			=> [
-	      							['Link 1', 'link1'],
-	      							['Link 2', 'link2'],
-	      							['Link 3', 'link3'],
+	      							['FAQ', 'faq'],
+	      							['Terms Of Service', 'terms'],
+	      							['Privacy Policy', 'privacy'],
 	      					   ],
 	      					   
 	      					   
 	  'footerTagLine'		=> 'Footer Tag Placeholder',
+	  
+	  
+	  'headerNavs'		    => [
+	      							['Page 1', 'page1'],
+	      							['Page 2', 'page2'],
+	      							['Page 3', 'page3'],
+	      					   ],
 	  
 	 			   
 	  'heroImage'			=> 'images/hero.jpg',
@@ -55,16 +62,9 @@
 						   
       'logo' 				=> 'Logo Placeholder',
       
-	  
-      'menuLinks'			=> [
-	      							['Link 1', 'link1.php'],
-	      							['Link 2', 'link2.php'],
-	      							['Link 3', 'link3.php'],
-	      					   ],
-	      					   
-							   
+					   
 	  'metaDescription'		=> 'Meta Description here',
-	  
+	  	  
 							   
 	  'phone'				=> '555-555-1234',
 	  
@@ -78,7 +78,7 @@
 	  						   ],
 	  
 	  
-	  'samplesHeader'		=> 'Extant::Alpha Placholder Samples Header',						   
+	  'samplesHeader'		=> 'Extant::Alpha Placeholder Samples Header',						   
 	  						   
 	  'showBillboard'		=> true,
 	  
@@ -87,6 +87,10 @@
 	  'showContainer'		=> true,
 	  
 	  'showExplainer'		=> true,
+	  
+	  'showFooterLinks'		=> true,
+	  
+	  'showHeaderNav'		=> false,
 	  
 	  'showSamples'			=> true,
 	  
@@ -99,6 +103,8 @@
 	  						   ],
 	  						   
 	  'slideSpeed'			=> 6000,
+	  
+	  'subpage-background'	=> 'images/subpage.jpg',
 	      					   			   
       'tagLine'				=> 'Extant::Alpha Placeholder Tag Line',
       

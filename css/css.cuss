@@ -11,7 +11,8 @@
   $color1Color = "#fff";  					//SET THIS
   
   //Contact form text color
-  $color2Color = "#5cb85c"; 				//SET THIS
+  //Subpage heading cover
+  $color2Color = "#2e6da4"; 				//SET THIS
   
   //Circles background color
   $backgroundColor1Color = "#6f8691;";      //SET THIS
@@ -108,7 +109,7 @@
     ".text_logo",			
     ".header_info",			
     "footer",				
-    ".main_content .floating_container",	
+    ".main_content .floating_container",
   );
   
 
@@ -117,7 +118,12 @@
   	".col_left_heading",	
   	".col_right_heading",
   	".contactForm input",
-  	".contactForm textarea"
+  	".contactForm textarea",
+  	".subpage-heading",
+  );
+  
+  $backgroundImage = array(
+    "subpage.jpg",
   );
   
   /*********************************************************************/
@@ -229,7 +235,8 @@
 
   $html .= "{ border-color:" . $border6Color . "; }\n\n";
   
-
+  $html .= ".subpage-content { background-image: url(" . $_SESSION["config"]["subpage-background"] . ");\n\n}";
+  
   $html .= "</style>";
   echo $html;
 
