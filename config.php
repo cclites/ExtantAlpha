@@ -90,13 +90,13 @@
 	  
 	  'showFooterLinks'		=> true,
 	  
-	  'showHeaderNav'		=> false,
+	  'showHeaderNav'		=> true,
 	  
 	  'showSamples'			=> true,
 	  
-	  'showSlider'			=> true,
+	  'showSlider1'			=> true,
 	  
-	  'sliderContent'		=> [
+	  'slider1Content'		=> [
 	   								"images/sampleImage1.jpg",
 	   								"images/sampleImage2.jpg",
 	   								"images/sampleImage3.jpg",

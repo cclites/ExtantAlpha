@@ -57,7 +57,7 @@
 
 		},
 		
-		slides: <?= json_encode($c["sliderContent"]) ?>,
+		slides: <?= json_encode($c["slider1Content"]) ?>,
 		
 	};
 	

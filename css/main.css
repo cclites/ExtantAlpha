@@ -196,6 +196,10 @@ footer{
 	div.samplesContainer .row{
 		height: auto;
 	}
+	
+	.slider-main{
+		/*width: 60vw;*/
+	}
 
 }
 
@@ -250,6 +254,29 @@ footer{
 		margin: 0 auto;
 	}
 	
+	div.slider
+	
+	div.slide{
+		height: auto;
+		width: 340px;
+	}
+	
 }
 
+@media screen and (max-width: 650px){
 
+	div.sliderContainer{
+		height: 200px;
+		/*border: 1px solid;*/
+	}
+	
+	div.slider-main{
+		height: 100%;
+	}
+	
+	div.slide{
+		height: 100%;
+		width: 100%;
+	}
+
+}

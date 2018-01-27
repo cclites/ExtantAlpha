@@ -44,7 +44,7 @@
 					include_once 'templates/explainer-container.php';
 				}
 				
-				if($_SESSION["config"]["showSlider"]){
+				if($_SESSION["config"]["showSlider1"]){
 					include_once 'templates/slider-container.php';
 				}
 				
@@ -58,7 +58,12 @@
 			}else{
 				echo "<style> body{ padding-top: 0; }</style>";
 				
-				include_once 'pages/' . $page . ".php";
+				if(is_file('pages/' . $page . ".php")){
+					include_once 'pages/' . $page . ".php";
+				}else{
+					include_once "error/404.php";
+				}
+				
 			}
 
 			//each page

@@ -40,7 +40,6 @@
 			if(HeadNav.navs.length > 1){	
 				var html='';
 				for(var i=0; i<HeadNav.navs.length; i += 1){
-					
 					html += '<a class="header-navs" href="?page=' + HeadNav.navs[i][1] + '">' + HeadNav.navs[i][0] + '</a>';
 				}
 			}
